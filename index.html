@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oliveth Otokunefor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" data-testid="test-container">
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="image-holder" data-testid="test-image-holder">
+        <img 
+          src="https://i.postimg.cc/zvMsm3sx/oli.jpg" 
+          alt="Oliveth Otokunefor" 
+          class="avatar" 
+          data-testid="test-user-avatar"
+        >
+      </figure>
+
+      <div class="text-content">
+        <header data-testid="test-header">
+          <h2 data-testid="test-user-name">Oliveth Otokunefor</h2>
+          <span id="current-time" data-testid="test-user-time"></span>
+        </header>
+
+        <section class="bio-section" data-testid="test-user-bio">
+          <h3>About Me</h3>
+          <p>A passionate web developer with a love for creating beautiful and functional websites.</p>
+        </section>
+
+        <section class="lists-section">
+          <section class="hobbies" data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Watching movies</li>
+            </ul>
+          </section>
+
+          <section class="dislikes" data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Negativity</li>
+              <li>Narcissists</li>
+              <li>Bad Code</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+
+      <nav class="social-links" data-testid="test-user-social-links">
+        <a 
+          href="https://github.com/olivethotokunefor" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          data-testid="test-user-social-github"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a 
+          href="https://www.linkedin.com/in/otokunefor-oliveth-b73875310" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          data-testid="test-user-social-linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </nav>
+    </article>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

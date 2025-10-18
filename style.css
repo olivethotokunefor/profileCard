@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0ffff;
+  padding: 20px;
+}
+
+.profile-card {
+  width: 800px;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  padding-left: 250px;
+  position: relative;
+}
+
+.image-holder {
+  width: 220px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-content {
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+#current-time {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.bio-section {
+  margin-bottom: 30px;
+}
+
+.bio-section p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.lists-section {
+  display: flex;
+  gap: 60px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 8px 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: "•";
+  color: #ff69b4;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.social-links {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #666;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 5px;
+}
+
+.social-links a:hover {
+  color: #ff69b4;
+}
+.social-links a:focus {
+  outline: 2px solid #00ced1;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 20px;
+    padding-top: 220px;
+    width: 90%;
+  }
+
+  .image-holder {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .lists-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
