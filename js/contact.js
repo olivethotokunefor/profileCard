@@ -15,14 +15,12 @@ function validateForm() {
     let isValid = true;
     clearErrors();
 
-    // Validate name
     const name = document.getElementById('name').value.trim();
     if (!name) {
         showError('name', 'Name is required');
         isValid = false;
     }
 
-    // Validate email
     const email = document.getElementById('email').value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email) {
@@ -33,14 +31,12 @@ function validateForm() {
         isValid = false;
     }
 
-    // Validate subject
     const subject = document.getElementById('subject').value.trim();
     if (!subject) {
         showError('subject', 'Subject is required');
         isValid = false;
     }
 
-    // Validate message
     const message = document.getElementById('message').value.trim();
     if (!message) {
         showError('message', 'Message is required');
