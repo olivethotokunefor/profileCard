@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0ffff, #fce4ff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+main {
+  background: #fff;
+  width: 850px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+main h2 {
+  text-align: center;
+  color: #7f00ff;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #f9f8ff;
+  border-left: 5px solid #e100ff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: #7f00ff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card p,
+.card ul {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style: disc inside;
+}
+
+.more-options {
+  text-align: center;
+  margin-top: 35px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-options button {
+  background: #fff;
+  color: black;
+  border: 1px solid #ff69b4;
+  border-radius: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.more-options button:hover {
+  background: #ff69b4;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
